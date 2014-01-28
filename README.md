@@ -12,3 +12,4 @@ This project needs a new name
 	$ git submodule update
 	$ tools/configure
 	$ make
+	$ build/goedit
