@@ -1,9 +1,7 @@
 cd vendor/gocui
-git pull
 git checkout goedit
 git pull origin goedit
 
 cd ../termbox-go
-git pull
 git checkout goedit
 git pull origin goedit
