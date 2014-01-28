@@ -1,0 +1,6 @@
+cd vendor/gocui
+git pull upstream master
+cd ../termbox-go
+git pull upstream master
+
+cd ../..
