@@ -1,0 +1,6 @@
+[submodule "vendor/gocui"]
+	path = vendor/gocui
+	url = https://github.com/hazbo/gocui.git
+[submodule "vendor/termbox-go"]
+	path = vendor/termbox-go
+	url = https://github.com/hazbo/termbox-go.git
