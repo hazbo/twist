@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	//"io/ioutil"
 	"../vendor/gocui"
 )
 
@@ -36,6 +35,11 @@ func main() {
     g.SetLayout(layout)
     if err := g.SetKeybinding("", gocui.KeyCtrlC, 0, quit); err != nil {
         log.Panicln(err)
+    }
+
+    
+    if err := keybindings(g); err != nil {
+            log.Panicln(err)
     }
 
     err = g.MainLoop()
