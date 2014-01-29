@@ -26,5 +26,11 @@ func keybindings(g *gocui.Gui) error {
     if err := g.SetKeybinding("main", gocui.KeyEnter, 0, setLineCount); err != nil {
         log.Panicln(err)
     }
+
+    // Reset
+    if err := g.SetKeybinding("", gocui.KeyCtrlR, 0, reset); err != nil {
+        log.Panicln(err)
+    }
+
     return nil
 }

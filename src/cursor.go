@@ -74,7 +74,7 @@ func setLineCount(g *gocui.Gui, v *gocui.View) error {
     }
 
     // Print the line number
-    fmt.Fprint(g.CurrentView(), cy)
+    fmt.Fprint(g.CurrentView(), "- ", cy + 1)
  
     if err := g.SetCurrentView("main"); err != nil {
         return err
