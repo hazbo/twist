@@ -2,6 +2,7 @@ package main
 
 import (
 	"../vendor/gocui"
+    "log"
 )
 
 func keybindings(g *gocui.Gui) error {
@@ -19,6 +20,11 @@ func keybindings(g *gocui.Gui) error {
     }
     if err := g.SetKeybinding("", gocui.KeyTab, 0, cursorTab); err != nil {
         return err
+    }
+
+    // Line count related functions
+    if err := g.SetKeybinding("main", gocui.KeyEnter, 0, setLineCount); err != nil {
+        log.Panicln(err)
     }
     return nil
 }

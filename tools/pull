@@ -1,6 +1,9 @@
 cd vendor/gocui
+git checkout master
 git pull upstream master
+
 cd ../termbox-go
+git checkout master
 git pull upstream master
 
 cd ../..
