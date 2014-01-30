@@ -23,10 +23,6 @@ func main() {
     g.ShowCursor = true
 
     if err := keybindings(g, b); err != nil {
-            log.Panicln(err)
-    }
-
-    if err := g.SetKeybinding("", gocui.KeyCtrlC, 0, quit); err != nil {
         log.Panicln(err)
     }
 

@@ -32,5 +32,10 @@ func keybindings(g *gocui.Gui, b *EditorBuffer) error {
         log.Panicln(err)
     }
 
+    // Quit
+    if err := g.SetKeybinding("", gocui.KeyCtrlC, 0, quit); err != nil {
+        log.Panicln(err)
+    }
+
     return nil
 }

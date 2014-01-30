@@ -15,7 +15,7 @@ func layout(g *gocui.Gui) error {
 	    
 	    fmt.Fprintln(v, "- 1")
 	}
-
+	
 	if (!FilenameIsSet()) {
 		if v, err := g.SetView("intro", 5, -1, maxX, maxY); err != nil {
 	        if err != gocui.ErrorUnkView {
