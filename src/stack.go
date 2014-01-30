@@ -1,5 +1,9 @@
 package main
 
+type Buffer struct {
+	content string
+}
+
 type Line struct {
 	count int
 }
