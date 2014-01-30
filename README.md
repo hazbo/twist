@@ -1,8 +1,12 @@
 # GoEdit
-This project needs a new name
 
 ### About
-"GoEdit" is a terminal text editor written in Go.
+GoEdit is a terminal text editor written in [Go](http://golang.org/). I am fairly new to Go
+and so far this project has been a nice learning curve. There may be some things that suck
+about it; so if you feel you can contribute to improve any aspect of it, please do.
+
+Also the name "GoEdit" sucks. If you have a more creative name for this please let me know
+ASAP!
 
 ### Install
 
@@ -10,10 +14,11 @@ GoEdit depends on [gocui](https://github.com/jroimartin/gocui) which in turn dep
 [termbox-go](https://github.com/nsf/termbox-go). These are actually forks stored locally
 in the `vendor` directory so they are easier to maintain and customise; hence the `submodule init`.
 
-The forked versions can be found here:
+The forked versions along with other dependencies can be found here:
 
   - [gocui](https://github.com/hazbo/gocui)
   - [termbox-go](https://github.com/hazbo/termbox-go)
+  - [otto](https://github.com/hazbo/otto.git)
 
 To build from source and get everything going all you need are the commands below. These will
 sort out the dependencies for you.
