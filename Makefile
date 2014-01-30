@@ -4,4 +4,4 @@ goedit: src/goedit.go
 	cd src && go build -o ../build/goedit
 
 clean:
-	rm build/goedit
+	rm -f build/goedit

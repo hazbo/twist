@@ -5,7 +5,7 @@ import (
 	"../vendor/gocui"
 )
 
-func layout(g *gocui.Gui) error {
+func Layout(g *gocui.Gui) error {
 	maxX, maxY := g.Size()
 
 	if v, err := g.SetView("side", -1, -1, 5, maxY); err != nil {

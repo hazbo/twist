@@ -16,17 +16,13 @@ func main() {
 
     defer g.Close()
 
-    g.SetLayout(layout)
+    g.SetLayout(Layout)
 
     g.SelBgColor = gocui.ColorWhite
     g.SelFgColor = gocui.ColorBlack
     g.ShowCursor = true
 
-    if err := keybindings(g, b); err != nil {
-            log.Panicln(err)
-    }
-
-    if err := g.SetKeybinding("", gocui.KeyCtrlC, 0, quit); err != nil {
+    if err := Keybindings(g, b); err != nil {
         log.Panicln(err)
     }
 
