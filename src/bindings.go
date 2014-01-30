@@ -5,7 +5,7 @@ import (
     "log"
 )
 
-func keybindings(g *gocui.Gui) error {
+func keybindings(g *gocui.Gui, b *EditorBuffer) error {
     if err := g.SetKeybinding("", gocui.KeyArrowDown, 0, cursorDown); err != nil {
 		return err
     }

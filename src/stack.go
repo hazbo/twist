@@ -1,18 +1,15 @@
 package main
 
 type EditorBuffer struct {
-	content []string
+	content string
 }
 
 type Line struct {
 	count int
 }
 
-func (b *EditorBuffer) appendToStackBuffer(char []string) {
-    c := make([]string, len(b.content) + len(char)) 
-    copy(c[:len(b.content)], b.content) 
-    copy(c[len(b.content):], char) 
-    b.content = c
+func (b *EditorBuffer) appendToStackBuffer(char string) {
+
 }
 
 func (b *EditorBuffer) detachFromStackBuffer() {
