@@ -11,3 +11,10 @@ func GetFileContents(filename string) []byte {
     }
     return b
 }
+
+func WriteFile(filename string, b []byte) {
+	err := ioutil.WriteFile(filename, b, 0644)
+	if err != nil{
+		panic(err)
+	}
+}

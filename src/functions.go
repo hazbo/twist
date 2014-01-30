@@ -4,7 +4,11 @@ import (
     "../vendor/gocui"
 )
 
-func reset(g *gocui.Gui, v *gocui.View) error {
+func Write(g *gocui.Gui, v *gocui.View) error {
+	return nil
+}
+
+func New(g *gocui.Gui, v *gocui.View) error {
 	maxX, maxY := g.Size()
 
 	if v, err := g.SetView("main", 5, -1, maxX, maxY); err != nil {
@@ -21,6 +25,6 @@ func reset(g *gocui.Gui, v *gocui.View) error {
 	return nil
 }
 
-func quit(g *gocui.Gui, v *gocui.View) error {
+func Quit(g *gocui.Gui, v *gocui.View) error {
     return gocui.ErrorQuit
 }
