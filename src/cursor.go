@@ -59,6 +59,9 @@ func cursorRight(g *gocui.Gui, v *gocui.View) error {
 
 func setLineCount(g *gocui.Gui, v *gocui.View) error {
 
+    fmt.Fprintln(v, "\n");
+
+/*
     cx, cy := 0, 0
 
     if v != nil {
@@ -79,7 +82,7 @@ func setLineCount(g *gocui.Gui, v *gocui.View) error {
     if err := g.SetCurrentView("main"); err != nil {
         return err
     }
-
+*/
     return nil
 }
 
