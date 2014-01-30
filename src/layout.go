@@ -43,8 +43,6 @@ func layout(g *gocui.Gui) error {
 
 		`)
 
-        //v.Editable = true
-
         if err := g.SetCurrentView("intro"); err != nil {
             return err
         }
