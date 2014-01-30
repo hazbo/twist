@@ -20,3 +20,7 @@ func reset(g *gocui.Gui, v *gocui.View) error {
 	}
 	return nil
 }
+
+func quit(g *gocui.Gui, v *gocui.View) error {
+    return gocui.ErrorQuit
+}

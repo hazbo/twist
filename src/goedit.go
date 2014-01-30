@@ -5,10 +5,6 @@ import (
 	"../vendor/gocui"
 )
 
-func quit(g *gocui.Gui, v *gocui.View) error {
-    return gocui.ErrorQuit
-}
-
 func main() {
     var err error
     g := gocui.NewGui()
