@@ -1,7 +1,11 @@
 # GoEdit
 This project needs a new name
 
-### About
+### The Text Editor
+
+"A system or program that allows a user to edit text." - [*Wikipedia*](https://www.google.co.uk/search?q=define%3A+testeditor&oq=define%3A+testeditor&aqs=chrome..69i57j69i58.3019j0j4&sourceid=chrome&espv=210&es_sm=91&ie=UTF-8#q=define:+text+editor)
+
+### About GoEdit
 "GoEdit" is a terminal text editor written in Go.
 
 ### Install
