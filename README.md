@@ -7,10 +7,10 @@ This project needs a new name
 ### Install
 
 GoEdit depends on [gocui](https://github.com/jroimartin/gocui) which in turn depends on
-[termbox-go](https://github.com/nsf/termbox-go). These are actually forked stored locally
+[termbox-go](https://github.com/nsf/termbox-go). These are actually forks stored locally
 in the `vendor` directory so they are easier to maintain and customise; hence the `submodule init`.
 
-The forked dependencies can be found here:
+The forked versions can be found here:
 
   - [gocui](https://github.com/hazbo/gocui)
   - [termbox-go](https://github.com/hazbo/termbox-go)
