@@ -2,6 +2,7 @@ package main
 
 import (
     "../vendor/gocui"
+    "../vendor/otto"
 )
 
 func reset(g *gocui.Gui, v *gocui.View) error {
@@ -26,11 +27,17 @@ func quit(g *gocui.Gui, v *gocui.View) error {
 }
 
 func console(g *gocui.Gui, v *gocui.View) error {
-
     if err := g.SetCurrentView("console"); err != nil {
         return err
     }
-
-
     return nil
+}
+
+func testjs(g *gocui.Gui, v *gocui.View) error {
+	Otto := otto.New()
+
+	Otto.Run(`
+		console.log('Hello World');
+	`)
+	return nil
 }
