@@ -20,27 +20,9 @@ func layout(g *gocui.Gui) error {
             return err
         }
         fmt.Fprintf(v, "%s",`
+        	Welcome to GoEdit v0.0.1
 
-
-			        GGGGGGGGGGGGG                 EEEEEEEEEEEEEEEEEEEEEE
-			     GGG::::::::::::G                 E::::::::::::::::::::E
-			   GG:::::::::::::::G                 E::::::::::::::::::::E
-			  G:::::GGGGGGGG::::G                 EE::::::EEEEEEEEE::::E
-			 G:::::G       GGGGGG   ooooooooooo     E:::::E       EEEEEE
-			G:::::G               oo:::::::::::oo   E:::::E             
-			G:::::G              o:::::::::::::::o  E::::::EEEEEEEEEE   
-			G:::::G    GGGGGGGGGGo:::::ooooo:::::o  E:::::::::::::::E   
-			G:::::G    G::::::::Go::::o     o::::o  E:::::::::::::::E   
-			G:::::G    GGGGG::::Go::::o     o::::o  E::::::EEEEEEEEEE   
-			G:::::G        G::::Go::::o     o::::o  E:::::E             
-			 G:::::G       G::::Go::::o     o::::o  E:::::E       EEEEEE
-			  G:::::GGGGGGGG::::Go:::::ooooo:::::oEE::::::EEEEEEEE:::::E
-			   GG:::::::::::::::Go:::::::::::::::oE::::::::::::::::::::E
-			     GGG::::::GGG:::G oo:::::::::::oo E::::::::::::::::::::E
-			        GGGGGG   GGGG   ooooooooooo   EEEEEEEEEEEEEEEEEEEEEE
-
-			Version 0.0.1
-
+        	To start: Ctrl+R (reset)
 		`)
 
         if err := g.SetCurrentView("intro"); err != nil {
