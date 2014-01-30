@@ -47,5 +47,13 @@ func layout(g *gocui.Gui) error {
             return err
         }
 	}
+
+	if v, err := g.SetView("console", -1, maxY - 2, maxX, maxY); err != nil {
+	    if err != gocui.ErrorUnkView {
+	        return err
+	    }
+	    
+	    v.Editable = true
+	}
 	return nil
 }
