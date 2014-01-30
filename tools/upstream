@@ -1,0 +1,8 @@
+echo "Adding upstream repos for dependencies"
+echo "They may already exist"
+
+cd vendor/gocui
+git remote add upstream https://github.com/jroimartin/gocui.git
+
+cd ../termbox-go
+git remote add upstream https://github.com/nsf/termbox-go.git
