@@ -5,7 +5,7 @@ GoEdit is a terminal text editor written in [Go](http://golang.org/). I am fairl
 and so far this project has been a nice learning curve. There may be some things that suck
 about it; so if you feel you can contribute to improve any aspect of it, please do.
 
-Also the name "GoEdit" sucks. If you have a more creative name for this please let me know
+Also the name kinda "GoEdit" sucks. If you have a more creative name for this please let me know
 ASAP!
 
 ### Install
@@ -47,7 +47,7 @@ If you plan on contributing it may be a good idea to run:
 This will add the upstream repos for where the dependencies originate. Ideally commits made on these
 repos will already be in our forked versions, but these tools can assist with that.
 
-### Contributors
+### Contributors:
 
   - [@harry4_](http://twitter.com/harry4_)
 
