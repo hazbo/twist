@@ -26,7 +26,7 @@ sort out the dependencies for you.
 	$ make
 	$ build/goedit
 
-![v0.0.1](https://raw.github.com/hazbo/goedit/master/screenshots/v0.0.1/1.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vZ29lZGl0L21hc3Rlci9zY3JlZW5zaG90cy92MC4wLjEvMS5wbmciLCJleHBpcmVzIjoxMzkxNTUzODUxfQ%3D%3D--90ae2d27e5550862e12ab35da46c0e7aff0e45a7)
+![v0.0.1](https://raw.github.com/hazbo/goedit/otto-integration/screenshots/v0.0.1/2.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vZ29lZGl0L290dG8taW50ZWdyYXRpb24vc2NyZWVuc2hvdHMvdjAuMC4xLzIucG5nIiwiZXhwaXJlcyI6MTM5MTcwNTAyMH0%3D--2a0493fc7c392f60d489e73864219d20d11b6e20)
 
 ### Contributing
 
