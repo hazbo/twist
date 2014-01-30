@@ -26,10 +26,6 @@ func main() {
             log.Panicln(err)
     }
 
-    if err := g.SetKeybinding("", gocui.KeyCtrlC, 0, quit); err != nil {
-        log.Panicln(err)
-    }
-
     err = g.MainLoop()
     if err != nil && err != gocui.ErrorQuit {
         log.Panicln(err)
