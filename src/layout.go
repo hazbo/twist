@@ -34,7 +34,7 @@ func layout(g *gocui.Gui) error {
 	    if err != gocui.ErrorUnkView {
 	        return err
 	    }
-	    
+	    fmt.Fprint(v, "jsc >> ")
 	    v.Editable = true
 	}
 	return nil
