@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"../vendor/gocui"
+	"../vendor/termbox-go"
 )
 
 func Layout(g *gocui.Gui) error {

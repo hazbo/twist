@@ -1,13 +1,9 @@
 package main
 
 import (
-	"../vendor/otto"
+	"../vendor/gocui"
 )
 
-func execute(javascript string) {
-	Otto := otto.New()
-
-	Otto.Run(`
-		console.log('Hello World');
-	`)
+func Execute(g *gocui.Gui, v *gocui.View) error {
+	return nil
 }

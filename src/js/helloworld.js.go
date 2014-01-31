@@ -4,7 +4,7 @@ import (
 	"../../vendor/otto"
 )
 
-func execute() {
+func ExecuteGoJs() {
 	otto := otto.New()
 	otto.Run(`
 

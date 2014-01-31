@@ -5,7 +5,7 @@ import (
     "log"
 )
 
-func Keybindings(g *gocui.Gui, b *EditorBuffer) error {
+func Keybindings(g *gocui.Gui) error {
     if err := g.SetKeybinding("", gocui.KeyArrowDown, 0, cursorDown); err != nil {
 		return err
     }
@@ -37,13 +37,17 @@ func Keybindings(g *gocui.Gui, b *EditorBuffer) error {
         log.Panicln(err)
     }
 
-    // Console
+    // TestJS
+    if err := g.SetKeybinding("", gocui.KeyCtrlP, 0, testjs); err != nil {
+        log.Panicln(err)
+    }
+
+    // Console related bindings
     if err := g.SetKeybinding("", gocui.KeyCtrlJ, 0, console); err != nil {
         log.Panicln(err)
     }
 
-    // TestJS
-    if err := g.SetKeybinding("", gocui.KeyCtrlP, 0, testjs); err != nil {
+    if err := g.SetKeybinding("console", gocui.KeyEnter, 0, Execute); err != nil {
         log.Panicln(err)
     }
     
