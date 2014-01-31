@@ -21,7 +21,11 @@ func Layout(g *gocui.Gui) error {
 	        if err != gocui.ErrorUnkView {
 	            return err
 	        }
-	        fmt.Fprintf(v, "%s",`    `)
+	        fmt.Fprintf(v, "%s", `
+	        	Welcome to GoEdit v0.0.1
+
+	        	To start: Ctrl+N (new)
+			`)
 
 	        if err := g.SetCurrentView("intro"); err != nil {
 	            return err
