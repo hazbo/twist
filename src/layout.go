@@ -13,7 +13,8 @@ func Layout(g *gocui.Gui) error {
 	        return err
 	    }
 	    
-	    fmt.Fprintln(v, "- 1")
+	    // Hide line numbers for now
+	    //fmt.Fprintln(v, "- 1")
 	}
 
 	if (!FilenameIsSet()) {
