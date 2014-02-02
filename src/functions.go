@@ -28,5 +28,3 @@ func New(g *gocui.Gui, v *gocui.View) error {
 func Quit(g *gocui.Gui, v *gocui.View) error {
     return gocui.ErrorQuit
 }
-
-

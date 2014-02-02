@@ -22,11 +22,6 @@ func Keybindings(g *gocui.Gui, b *EditorBuffer) error {
         return err
     }
 
-    // Line count related functions
-    if err := g.SetKeybinding("main", gocui.KeyEnter, 0, setLineCount); err != nil {
-        log.Panicln(err)
-    }
-
     // New
     if err := g.SetKeybinding("", gocui.KeyCtrlN, 0, New); err != nil {
         log.Panicln(err)
@@ -36,6 +31,5 @@ func Keybindings(g *gocui.Gui, b *EditorBuffer) error {
     if err := g.SetKeybinding("", gocui.KeyCtrlC, 0, Quit); err != nil {
         log.Panicln(err)
     }
-
     return nil
 }
