@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
     "../vendor/gocui"
 )
 
@@ -27,6 +28,13 @@ func New(g *gocui.Gui, v *gocui.View) error {
 
 func Quit(g *gocui.Gui, v *gocui.View) error {
     return gocui.ErrorQuit
+}
+
+func CountLines(g *gocui.Gui, v *gocui.View) error {
+
+    fmt.Fprint(g.View("side"), "- " , g.View("main").LineCount() + 1)
+
+    return nil
 }
 
 
