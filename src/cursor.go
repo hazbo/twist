@@ -2,7 +2,6 @@ package main
 
 import (
     "../vendor/gocui"
-    "fmt"
 )
 
 func cursorDown(g *gocui.Gui, v *gocui.View) error {
@@ -54,35 +53,6 @@ func cursorRight(g *gocui.Gui, v *gocui.View) error {
             }
         }
     }
-    return nil
-}
-
-func setLineCount(g *gocui.Gui, v *gocui.View) error {
-
-    fmt.Fprintln(v, "\n");
-
-/*
-    cx, cy := 0, 0
-
-    if v != nil {
-        cx, cy = v.Cursor()
-    }
-
-    if err := g.SetCurrentView("side"); err != nil {
-        return err
-    }
-
-    if (cx > 0) {
-        // use var, remove this condition
-    }
-
-    // Print the line number
-    fmt.Fprint(g.CurrentView(), "- ", cy + 1)
- 
-    if err := g.SetCurrentView("main"); err != nil {
-        return err
-    }
-*/
     return nil
 }
 
