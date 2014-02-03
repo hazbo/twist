@@ -7,6 +7,7 @@ import (
 
 func Layout(g *gocui.Gui) error {
 	maxX, maxY := g.Size()
+	file 	   := File{name:""}
 
 	if v, err := g.SetView("side", -1, -1, 5, maxY); err != nil {
 	    if err != gocui.ErrorUnkView {
@@ -43,7 +44,7 @@ func Layout(g *gocui.Gui) error {
 		    v.Editable = true
 
 		    filename := GetFilenameArg()
-		    file     := File{name:filename}
+		    file.SetName(filename)
 
 		    fmt.Fprintf(v, "%s", GetFileContents(file.Name()))
 
