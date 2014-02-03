@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
     "../vendor/gocui"
-    "../vendor/otto"
 )
 
 func ShowWriteDialog(g *gocui.Gui, v *gocui.View) error {
@@ -51,18 +50,16 @@ func Quit(g *gocui.Gui, v *gocui.View) error {
     return gocui.ErrorQuit
 }
 
-func console(g *gocui.Gui, v *gocui.View) error {
+func UseConsole(g *gocui.Gui, v *gocui.View) error {
     if err := g.SetCurrentView("console"); err != nil {
         return err
     }
     return nil
 }
 
-func testjs(g *gocui.Gui, v *gocui.View) error {
-	Otto := otto.New()
-
-	Otto.Run(`
-		console.log('Hello World');
-	`)
-	return nil
+func UseEditor(g *gocui.Gui, v *gocui.View) error {
+    if err := g.SetCurrentView("main"); err != nil {
+        return err
+    }
+    return nil
 }

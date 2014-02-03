@@ -37,13 +37,13 @@ func Keybindings(g *gocui.Gui) error {
         log.Panicln(err)
     }
 
-    // TestJS
-    if err := g.SetKeybinding("", gocui.KeyCtrlP, 0, testjs); err != nil {
+    // Switch to the JS console
+    if err := g.SetKeybinding("", gocui.KeyCtrlJ, 0, UseConsole); err != nil {
         log.Panicln(err)
     }
 
-    // Console related bindings
-    if err := g.SetKeybinding("", gocui.KeyCtrlJ, 0, console); err != nil {
+    // Switch to the editor
+    if err := g.SetKeybinding("console", gocui.KeyCtrlK, 0, UseEditor); err != nil {
         log.Panicln(err)
     }
 

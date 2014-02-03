@@ -15,7 +15,6 @@ func Execute(g *gocui.Gui, v *gocui.View) error {
 	if (raw_command != "") {
 
 		Otto := otto.New()
-		Otto.Run(ExecuteGoJs())
 
 		// Testing a 'sayHello' function
 		Otto.Set("sayHello", func(call otto.FunctionCall) otto.Value {
