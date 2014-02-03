@@ -1,4 +1,6 @@
 cd vendor/gocui
+git checkout v0.2-dev
+git pull upstream v0.2-dev
 git checkout master
 git pull upstream master
 
