@@ -29,8 +29,8 @@ func Layout(g *gocui.Gui) error {
 
 	        	To start    : Ctrl+N (new)
 	        	To quit     : Ctrl+C
-	        	JS Mode     : Ctrl+J
 	        	Editor Mode : Ctrl+K
+	        	JS Mode     : Ctrl+J
 			`)
 
 	        if err := g.SetCurrentView("intro"); err != nil {
