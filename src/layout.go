@@ -42,7 +42,10 @@ func Layout(g *gocui.Gui) error {
 
 		    v.Editable = true
 
-		    fmt.Fprintf(v, "%s", GetFileContents(GetFilenameArg()))
+		    filename := GetFilenameArg()
+		    file     := File{name:filename}
+
+		    fmt.Fprintf(v, "%s", GetFileContents(file.Name()))
 
 		    if err := g.SetCurrentView("main"); err != nil {
 		        return err

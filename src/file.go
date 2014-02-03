@@ -12,7 +12,7 @@ func (f *File) SetName(name string) {
 	f.name = name
 }
 
-func (f File) Name() {
+func (f File) Name() string {
 	return f.name
 }
 
