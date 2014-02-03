@@ -8,4 +8,8 @@ cd ../termbox-go
 git checkout master
 git pull upstream master
 
+cd ../otto
+git checkout master
+git pull upstream master
+
 cd ../..

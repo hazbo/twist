@@ -4,3 +4,6 @@
 [submodule "vendor/termbox-go"]
 	path = vendor/termbox-go
 	url = https://github.com/hazbo/termbox-go.git
+[submodule "vendor/otto"]
+	path = vendor/otto
+	url = https://github.com/hazbo/otto.git

@@ -6,3 +6,6 @@ git remote add upstream https://github.com/jroimartin/gocui.git
 
 cd ../termbox-go
 git remote add upstream https://github.com/nsf/termbox-go.git
+
+cd ../otto
+git remote add upstream https://github.com/robertkrimen/otto.git

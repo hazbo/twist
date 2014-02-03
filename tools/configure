@@ -7,3 +7,10 @@ cd ../termbox-go
 git pull
 git checkout goedit
 git pull origin goedit
+
+cd ../otto
+git pull
+git checkout goedit
+git pull origin goedit
+
+cd ../..

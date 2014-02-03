@@ -4,6 +4,18 @@ import (
 	"io/ioutil"
 )
 
+type File struct {
+	name string
+}
+
+func (f *File) SetName(name string) {
+	f.name = name
+}
+
+func (f File) Name() string {
+	return f.name
+}
+
 func GetFileContents(filename string) []byte {
 	b, err := ioutil.ReadFile(filename)
     if err != nil {

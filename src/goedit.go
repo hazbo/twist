@@ -8,7 +8,6 @@ import (
 func main() {
     var err error
     g := gocui.NewGui()
-    b := new(EditorBuffer)
 
     if err := g.Init(); err != nil {
         log.Panicln(err)
@@ -22,7 +21,7 @@ func main() {
     g.SelFgColor = gocui.ColorBlack
     g.ShowCursor = true
 
-    if err := Keybindings(g, b); err != nil {
+    if err := Keybindings(g); err != nil {
         log.Panicln(err)
     }
 

@@ -1,17 +1,38 @@
 package main
 
 import (
+	"fmt"
     "../vendor/gocui"
 )
 
-func Write(g *gocui.Gui, v *gocui.View) error {
+func ShowWriteDialog(g *gocui.Gui, v *gocui.View) error {
+	maxX, maxY := g.Size()
+	if v, err := g.SetView("dialog-write", maxX/2-30, maxY/2, maxX/2+30, maxY/2+2); err != nil {
+		if err != gocui.ErrorUnkView {
+			return err
+		}
+		v.Editable = true
+		fmt.Fprintln(v, "editor.write('');")
+
+        cx, cy := v.Cursor()
+        if err := v.SetCursor(cx + 14, cy); err != nil {
+            ox, oy := v.Origin()
+            if err := v.SetOrigin(ox + 14, oy); err != nil {
+                return err
+            }
+        }
+
+		if err := g.SetCurrentView("dialog-write"); err != nil {
+			return err
+		}
+	}
 	return nil
 }
 
 func New(g *gocui.Gui, v *gocui.View) error {
 	maxX, maxY := g.Size()
 
-	if v, err := g.SetView("main", 5, -1, maxX, maxY); err != nil {
+	if v, err := g.SetView("main", 5, -1, maxX, maxY - 2); err != nil {
 	    if err != gocui.ErrorUnkView {
 	        return err
 	    }
@@ -27,4 +48,18 @@ func New(g *gocui.Gui, v *gocui.View) error {
 
 func Quit(g *gocui.Gui, v *gocui.View) error {
     return gocui.ErrorQuit
+}
+
+func UseConsole(g *gocui.Gui, v *gocui.View) error {
+    if err := g.SetCurrentView("console"); err != nil {
+        return err
+    }
+    return nil
+}
+
+func UseEditor(g *gocui.Gui, v *gocui.View) error {
+    if err := g.SetCurrentView("main"); err != nil {
+        return err
+    }
+    return nil
 }
