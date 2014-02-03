@@ -63,6 +63,15 @@ func Layout(g *gocui.Gui) error {
 	    }
 	    fmt.Fprint(v, "jsc >> ")
 	    v.Editable = true
+
+        cx, cy := v.Cursor()
+        if err := v.SetCursor(cx + 7, cy); err != nil {
+            ox, oy := v.Origin()
+            if err := v.SetOrigin(ox + 7, oy); err != nil {
+                return err
+            }
+        }
+
 	}
 	return nil
 }
