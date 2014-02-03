@@ -1,8 +1,8 @@
-all: goedit
+all: twist
 
-goedit: src/goedit.go
-	cd src && go build -o ../build/goedit
+twist: src/goedit.go
+	cd src && go build -o ../build/twist
 
 clean:
-	rm -f build/goedit
+	rm -f build/twist
 	rm -f build/*.txt

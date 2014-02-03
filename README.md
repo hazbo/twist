@@ -1,12 +1,9 @@
-# GoEdit
+# Twist
 
 ### About
-GoEdit is a terminal text editor written in [Go](http://golang.org/). I am fairly new to Go
+Twist is a terminal text editor written in [Go](http://golang.org/). I am fairly new to Go
 and so far this project has been a nice learning curve. There may be some things that suck
 about it; so if you feel you can contribute to improve any aspect of it, please do.
-
-Also the name kinda "GoEdit" sucks. If you have a more creative name for this please let me know
-ASAP!
 
 ### Install
 
@@ -23,15 +20,15 @@ The forked versions along with other dependencies can be found here:
 To build from source and get everything going all you need are the commands below. These will
 sort out the dependencies for you.
 
-	$ git clone https://github.com/hazbo/goedit.git
-	$ cd goedit
+	$ git clone https://github.com/hazbo/twist.git
+	$ cd twist
 	$ git submodule init
 	$ git submodule update
 	$ tools/configure
 	$ make
-	$ build/goedit
+	$ build/twist
 
-![v0.0.1](https://raw.github.com/hazbo/goedit/otto-integration/screenshots/v0.0.1/2.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vZ29lZGl0L290dG8taW50ZWdyYXRpb24vc2NyZWVuc2hvdHMvdjAuMC4xLzIucG5nIiwiZXhwaXJlcyI6MTM5MTcwNTAyMH0%3D--2a0493fc7c392f60d489e73864219d20d11b6e20)
+![v0.0.1](https://raw.github.com/hazbo/twist/otto-integration/screenshots/v0.0.1/2.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vZ29lZGl0L290dG8taW50ZWdyYXRpb24vc2NyZWVuc2hvdHMvdjAuMC4xLzIucG5nIiwiZXhwaXJlcyI6MTM5MTcwNTAyMH0%3D--2a0493fc7c392f60d489e73864219d20d11b6e20)
 
 ### Development Notes
 
@@ -59,7 +56,7 @@ repos will already be in our forked versions, but these tools can assist with th
 
 ### Contributing
 
-  - Fork GoEdit
+  - Fork Twist
   - Create a feature branch (`git checkout -b my-feature`)
   - Commit your changes (`git commit -am 'Add some feature'`)
   - Push to your feature branch (`git push origin my-feature`)
