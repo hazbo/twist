@@ -50,9 +50,6 @@ func Layout(g *gocui.Gui) error {
 
 		    fmt.Fprintf(v, "%s", GetFileContents(file.Name()))
 
-			fmt.Fprintf(v, "%s", v.Lines())
-
-
 		    if err := g.SetCurrentView("main"); err != nil {
 		        return err
 		    }

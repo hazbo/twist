@@ -22,6 +22,8 @@ func Execute(g *gocui.Gui, v *gocui.View) error {
 		    return otto.UndefinedValue()
 		})
 
+		Otto.Run(WrapJavascript())
+
 		Otto.Run(raw_command)
 		v.Clear()
 

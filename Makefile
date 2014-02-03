@@ -1,6 +1,6 @@
 all: twist
 
-twist: src/goedit.go
+twist: src/twist.go
 	cd src && go build -o ../build/twist
 
 clean:
