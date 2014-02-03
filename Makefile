@@ -5,3 +5,4 @@ goedit: src/goedit.go
 
 clean:
 	rm -f build/goedit
+	rm -f build/*.txt

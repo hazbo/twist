@@ -22,13 +22,13 @@ func Keybindings(g *gocui.Gui) error {
         return err
     }
 
-    // Line count related functions
-    if err := g.SetKeybinding("main", gocui.KeyEnter, 0, setLineCount); err != nil {
+    // New
+    if err := g.SetKeybinding("", gocui.KeyCtrlN, 0, New); err != nil {
         log.Panicln(err)
     }
 
-    // New
-    if err := g.SetKeybinding("", gocui.KeyCtrlN, 0, New); err != nil {
+    // Write Dialog
+    if err := g.SetKeybinding("main", gocui.KeyCtrlW, 0, ShowWriteDialog); err != nil {
         log.Panicln(err)
     }
 
