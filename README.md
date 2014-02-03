@@ -28,7 +28,7 @@ sort out the dependencies for you.
 	$ make
 	$ build/twist
 
-![v0.0.1](https://raw.github.com/hazbo/twist/otto-integration/screenshots/v0.0.1/2.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vZ29lZGl0L290dG8taW50ZWdyYXRpb24vc2NyZWVuc2hvdHMvdjAuMC4xLzIucG5nIiwiZXhwaXJlcyI6MTM5MTcwNTAyMH0%3D--2a0493fc7c392f60d489e73864219d20d11b6e20)
+![v0.0.1](https://raw.github.com/hazbo/twist/master/screenshots/v0.0.1/1.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjAuMS8xLnBuZyIsImV4cGlyZXMiOjEzOTIwNDI3NjF9--29f0d28d54a4c3bc0ce06c06619ae9392ea9eeac)
 
 ### Development Notes
 
