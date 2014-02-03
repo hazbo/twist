@@ -29,7 +29,6 @@ func Layout(g *gocui.Gui) error {
 
 	        	To start : Ctrl+N (new)
 	        	To quit  : Ctrl+C
-
 			`)
 
 	        if err := g.SetCurrentView("intro"); err != nil {
@@ -48,6 +47,9 @@ func Layout(g *gocui.Gui) error {
 		    file.SetName(filename)
 
 		    fmt.Fprintf(v, "%s", GetFileContents(file.Name()))
+
+			fmt.Fprintf(v, "%s", v.Lines())
+
 
 		    if err := g.SetCurrentView("main"); err != nil {
 		        return err

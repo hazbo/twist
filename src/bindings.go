@@ -50,6 +50,5 @@ func Keybindings(g *gocui.Gui) error {
     if err := g.SetKeybinding("console", gocui.KeyEnter, 0, Execute); err != nil {
         log.Panicln(err)
     }
-    
     return nil
 }
