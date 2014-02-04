@@ -1,3 +1,14 @@
+/**
+ * Twist v0.1-dev
+ *
+ * (c) Harry Lawrence
+ *
+ * License: MIT
+ * 
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 package main
 
 import (
@@ -16,6 +27,13 @@ func Execute(g *gocui.Gui, v *gocui.View) error {
 
 		Otto := otto.New()
 
+		// Print
+		Otto.Set("print", func(call otto.FunctionCall) otto.Value {
+		    fmt.Fprintf(g.View("main"), "%s", call.Argument(0).String())
+		    return otto.UndefinedValue()
+		})
+
+		// Load in twist.js
 		js_source, err := Asset("src/js/twist.js")
 		if (err == nil) {
 			if (len(js_source) > 0) {
@@ -24,13 +42,8 @@ func Execute(g *gocui.Gui, v *gocui.View) error {
 			}
 		}
 
-		// Testing a 'sayHello' function
-		Otto.Set("sayHello", func(call otto.FunctionCall) otto.Value {
-		    fmt.Fprintf(g.View("main"), "Hello, %s.\n", call.Argument(0).String())
-		    return otto.UndefinedValue()
-		})
-
 		Otto.Run(raw_command)
+
 		v.Clear()
 
 	    fmt.Fprintf(v, "%s", "jsc >> ")

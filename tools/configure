@@ -1,3 +1,5 @@
+#!/bin/sh
+
 cd vendor/gocui
 git pull
 git checkout goedit
