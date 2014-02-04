@@ -12,8 +12,8 @@
 package main
 
 import (
-	"log"
-	"../vendor/gocui"
+    "log"
+    "../vendor/gocui"
 )
 
 func main() {

@@ -66,8 +66,3 @@ func cursorRight(g *gocui.Gui, v *gocui.View) error {
     }
     return nil
 }
-
-func cursorTab(g *gocui.Gui, v *gocui.View) error {
-    // Insert spaces
-    return nil
-}

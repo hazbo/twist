@@ -12,16 +12,16 @@
 package main
 
 import (
-	"os"
+    "os"
 )
 
 func FilenameIsSet() bool {
-	if len(os.Args) < 2 {
-		return false
-	}
-	return true
+    if len(os.Args) < 2 {
+        return false
+    }
+    return true
 }
 
 func GetFilenameArg() string {
-	return os.Args[1]
+    return os.Args[1]
 }
