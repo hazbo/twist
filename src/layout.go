@@ -36,7 +36,7 @@ func Layout(g *gocui.Gui) error {
                 return err
             }
             fmt.Fprintf(v, "%s", `
-                Welcome to Twist v0.0.1
+                Welcome to Twist v0.1
 
                 To start    : Ctrl+N (new)
                 To quit     : Ctrl+C
