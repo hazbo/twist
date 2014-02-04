@@ -7,3 +7,6 @@
 [submodule "vendor/otto"]
 	path = vendor/otto
 	url = https://github.com/hazbo/otto.git
+[submodule "vendor/go-bindata"]
+	path = vendor/go-bindata
+	url = https://github.com/hazbo/go-bindata.git
