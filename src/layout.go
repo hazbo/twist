@@ -24,9 +24,7 @@ func Layout(g *gocui.Gui) error {
         if err != gocui.ErrorUnkView {
             return err
         }
-        
-        // Hide line numbers for now
-        //fmt.Fprintln(v, "- 1")
+
         fmt.Fprintf(v, "%s", "")
     }
 
