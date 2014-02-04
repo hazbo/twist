@@ -16,13 +16,19 @@ func Execute(g *gocui.Gui, v *gocui.View) error {
 
 		Otto := otto.New()
 
+		js_source, err := Asset("src/js/twist.js")
+		if (err == nil) {
+			if (len(js_source) > 0) {
+				js_source_string := string(js_source[:])
+				Otto.Run(js_source_string)
+			}
+		}
+
 		// Testing a 'sayHello' function
 		Otto.Set("sayHello", func(call otto.FunctionCall) otto.Value {
 		    fmt.Fprintf(g.View("main"), "Hello, %s.\n", call.Argument(0).String())
 		    return otto.UndefinedValue()
 		})
-
-		//Otto.Run(WrapJavascript())
 
 		Otto.Run(raw_command)
 		v.Clear()
