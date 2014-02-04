@@ -12,6 +12,7 @@
 package main
 
 import (
+   // "fmt"
     "../vendor/gocui"
 )
 
@@ -64,5 +65,14 @@ func cursorRight(g *gocui.Gui, v *gocui.View) error {
             }
         }
     }
+    return nil
+}
+
+
+func EditorKeyEnter(g *gocui.Gui, v *gocui.View) error {
+    return nil
+}
+
+func EditorKeyBackspace(g *gocui.Gui, v *gocui.View) error {
     return nil
 }

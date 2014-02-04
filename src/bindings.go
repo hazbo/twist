@@ -30,6 +30,20 @@ func Keybindings(g *gocui.Gui) error {
         return err
     }
 
+    // Editor key enter
+    if err := g.SetKeybinding("main", gocui.KeyEnter, 0, EditorKeyEnter); err != nil {
+        log.Panicln(err)
+    }
+
+    // Editor key backspace
+    if err := g.SetKeybinding("main", gocui.KeyBackspace, 0, EditorKeyBackspace); err != nil {
+        log.Panicln(err)
+    }
+
+    if err := g.SetKeybinding("main", gocui.KeyBackspace2, 0, EditorKeyBackspace); err != nil {
+        log.Panicln(err)
+    }
+
     // New
     if err := g.SetKeybinding("", gocui.KeyCtrlN, 0, New); err != nil {
         log.Panicln(err)
