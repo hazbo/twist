@@ -25,5 +25,3 @@ var editor = {
     }
 
 }
-
-var e = editor;
