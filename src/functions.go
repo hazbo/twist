@@ -13,6 +13,7 @@ package main
 
 import (
     "fmt"
+    "strings"
     "../vendor/gocui"
 )
 
@@ -60,10 +61,12 @@ func ShowWriteDialog(g *gocui.Gui, v *gocui.View) error {
         v.Editable = true
         fmt.Fprintf(v, "jsc >> editor.write('%s');", g.Filename())
 
+        cursor_position := 21 + strings.Index(g.Filename(), ".")
+
         cx, cy := v.Cursor()
-        if err := v.SetCursor(cx + 21, cy); err != nil {
+        if err := v.SetCursor(cx + cursor_position, cy); err != nil {
             ox, oy := v.Origin()
-            if err := v.SetOrigin(ox + 21, oy); err != nil {
+            if err := v.SetOrigin(ox + cursor_position, oy); err != nil {
                 return err
             }
         }
