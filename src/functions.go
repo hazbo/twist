@@ -62,6 +62,9 @@ func ShowWriteDialog(g *gocui.Gui, v *gocui.View) error {
         fmt.Fprintf(v, "jsc >> editor.write('%s');", g.Filename())
 
         cursor_position := 21 + strings.Index(g.Filename(), ".")
+        if (cursor_position == 20) {
+            cursor_position++
+        }
 
         cx, cy := v.Cursor()
         if err := v.SetCursor(cx + cursor_position, cy); err != nil {
