@@ -44,12 +44,16 @@ be executed at run time as you start using the Javascript console.
 There is virtually next to nothing in there at the moment. Things will be added to
 allow you to perform all sorts of tasks but here is a quick example anyway:
 
-    jsc >> e.print("Hello, World!");
+```javascript
+jsc >> e.print("Hello, World!");
+```
 
 This will just append the string "Hello, World" to your buffer. Another example
 using a loop could look like this:
 
-    jsc >> for (var i = 0; i < 10; i++) { e.println('Hello, World!'); }
+```javascript
+jsc >> for (var i = 0; i < 10; i++) { e.println('Hello, World!'); }
+```
 
 And as you would expect it will be append to your buffer multiple times.
 
