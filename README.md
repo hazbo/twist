@@ -5,6 +5,9 @@ Twist is a terminal text editor written in [Go](http://golang.org/). I am fairly
 and so far this project has been a nice learning curve. There may be some things that suck
 about it; so if you feel you can contribute to improve any aspect of it, please do.
 
+One of the things I wanted to add to this editor is a nice Javascript API that will
+allow you to perform various tasks that should help you save time.
+
 ### Install
 
 GoEdit depends on [gocui](https://github.com/jroimartin/gocui) which in turn depends on
@@ -29,6 +32,28 @@ sort out the dependencies for you.
 	$ build/twist
 
 ![v0.0.1](https://raw.github.com/hazbo/twist/master/screenshots/v0.0.1/1.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjAuMS8xLnBuZyIsImV4cGlyZXMiOjEzOTIwNDI3NjF9--29f0d28d54a4c3bc0ce06c06619ae9392ea9eeac)
+
+### Javascript API
+
+There are Javascript functions within the `console.go` written in Go with the help of
+[otto](https://github.com/hazbo/otto.git). On top of those is what will be an API that
+allows the editor to interact with some of the things performed using Go. This is a
+standard Javascript file found in `src/js/twist.js`. Anything that is put in here will
+be executed at run time as you start using the Javascript console.
+
+There is virtually next to nothing in there at the moment. Things will be added to
+allow you to perform all sorts of tasks but here is a quick example anyway:
+
+    jsc >> e.print("Hello, World!");
+
+This will just append the string "Hello, World" to your buffer. Another example
+using a loop could look like this:
+
+    jsc >> for (var i = 0; i < 10; i++) { e.println('Hello, World!'); }
+
+And as you would expect it will be append to your buffer multiple times.
+
+I will come back to documenting the Javascript API when it is more useful.
 
 ### Development Notes
 
