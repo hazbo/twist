@@ -29,9 +29,6 @@ func Keybindings(g *gocui.Gui) error {
     if err := g.SetKeybinding("", gocui.KeyArrowRight, 0, cursorRight); err != nil {
         return err
     }
-    if err := g.SetKeybinding("", gocui.KeyTab, 0, cursorTab); err != nil {
-        return err
-    }
 
     // New
     if err := g.SetKeybinding("", gocui.KeyCtrlN, 0, New); err != nil {
