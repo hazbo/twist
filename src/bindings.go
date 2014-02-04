@@ -59,5 +59,10 @@ func Keybindings(g *gocui.Gui) error {
     if err := g.SetKeybinding("console", gocui.KeyEnter, 0, Execute); err != nil {
         log.Panicln(err)
     }
+
+    // Hide write dialog
+    if err := g.SetKeybinding("dialog-write", gocui.KeyEnter, 0, HideWriteDialog); err != nil {
+        log.Panicln(err)
+    }
     return nil
 }
