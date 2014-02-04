@@ -32,6 +32,12 @@ func Execute(g *gocui.Gui, v *gocui.View) error {
             return otto.UndefinedValue()
         })
 
+        // Write
+        Otto.Set("write", func(call otto.FunctionCall) otto.Value {
+            WriteFile(call.Argument(0).String(), []byte(g.View("main").Buffer()))
+            return otto.UndefinedValue()
+        })
+
         // Load in twist.js
         js_source, err := Asset("src/js/twist.js")
         if (err == nil) {
