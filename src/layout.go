@@ -57,6 +57,8 @@ func Layout(g *gocui.Gui) error {
             filename := GetFilenameArg()
             file.SetName(filename)
 
+            g.SetFilename(file.Name())
+
             fmt.Fprintf(v, "%s", GetFileContents(file.Name()))
 
             if err := g.SetCurrentView("main"); err != nil {
@@ -64,9 +66,6 @@ func Layout(g *gocui.Gui) error {
             }
         }
     }
-
-    // Set the current file name, defaults as empty string
-    g.SetFilename(file.Name())
 
     if v, err := g.SetView("console", -1, maxY - 2, maxX, maxY); err != nil {
         if err != gocui.ErrorUnkView {

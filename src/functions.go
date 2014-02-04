@@ -58,7 +58,7 @@ func ShowWriteDialog(g *gocui.Gui, v *gocui.View) error {
             return err
         }
         v.Editable = true
-        fmt.Fprintln(v, "jsc >> editor.write('');")
+        fmt.Fprintf(v, "jsc >> editor.write('%s');", g.Filename())
 
         cx, cy := v.Cursor()
         if err := v.SetCursor(cx + 21, cy); err != nil {
