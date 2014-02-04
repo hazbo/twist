@@ -11,7 +11,6 @@
  */
 
 var editor = {
-
     print : function(text) {
         print(text);
     }
@@ -23,5 +22,6 @@ var editor = {
     write : function(filename) {
     	write(filename);
     }
-
 }
+
+var e = editor;

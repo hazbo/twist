@@ -89,3 +89,9 @@ func HideWriteDialog(g *gocui.Gui, v *gocui.View) error {
     g.SetCurrentView("main")
     return nil
 }
+
+func ExitWriteDialog(g *gocui.Gui, v *gocui.View) error {
+    g.DeleteView("dialog-write")
+    g.SetCurrentView("main")
+    return nil
+}

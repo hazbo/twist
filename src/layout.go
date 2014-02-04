@@ -34,15 +34,15 @@ func Layout(g *gocui.Gui) error {
                 return err
             }
             fmt.Fprintf(v, "%s", `
-                Welcome to Twist v0.1
+            Welcome to Twist v0.1
 
-                To start    : Ctrl+N (new)
-                To quit     : Ctrl+C
+            To start    : Ctrl+N (new)
+            To quit     : Ctrl+C
 
-                Editor mode : Ctrl+K 
-                JS mode     : Ctrl+J 
+            Editor mode : Ctrl+K 
+            JS mode     : Ctrl+J 
 
-                Write       : Ctrl+W
+            Write       : Ctrl+W
             `)
 
             if err := g.SetCurrentView("intro"); err != nil {
