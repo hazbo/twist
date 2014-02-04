@@ -1,1 +1,3 @@
 .DS_Store
+build/twist
+tools/build-tools/go-bindata/bindata
