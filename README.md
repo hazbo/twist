@@ -31,7 +31,7 @@ sort out the dependencies for you.
 	$ make
 	$ build/twist
 
-![v0.0.1](https://raw.github.com/hazbo/twist/master/screenshots/v0.0.1/1.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjAuMS8xLnBuZyIsImV4cGlyZXMiOjEzOTIwNDI3NjF9--29f0d28d54a4c3bc0ce06c06619ae9392ea9eeac)
+![v0.0.1](https://raw.github.com/hazbo/twist/master/screenshots/v0.1/3.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjEvMy5wbmciLCJleHBpcmVzIjoxMzkyMTI3OTEzfQ%3D%3D--624c90f8058903d2e94fb7cf9697457120cd23f5)
 
 ### Javascript API
 
