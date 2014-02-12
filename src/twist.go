@@ -14,6 +14,7 @@ package main
 import (
     "log"
     "../vendor/gocui"
+    "../vendor/otto"
 )
 
 func main() {
@@ -31,6 +32,10 @@ func main() {
     g.SelBgColor = gocui.ColorWhite
     g.SelFgColor = gocui.ColorBlack
     g.ShowCursor = true
+
+    g.SetOtto(otto.New())
+
+    OttoConfigure(g)
 
     if err := Keybindings(g); err != nil {
         log.Panicln(err)

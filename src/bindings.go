@@ -70,7 +70,7 @@ func Keybindings(g *gocui.Gui) error {
     }
 
     // Execute JS console command
-    if err := g.SetKeybinding("console", gocui.KeyEnter, 0, Execute); err != nil {
+    if err := g.SetKeybinding("console", gocui.KeyEnter, 0, OttoExecute); err != nil {
         log.Panicln(err)
     }
 

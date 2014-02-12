@@ -84,7 +84,7 @@ func ShowWriteDialog(g *gocui.Gui, v *gocui.View) error {
 func HideWriteDialog(g *gocui.Gui, v *gocui.View) error {
     g.View("console").Clear()
     fmt.Fprint(g.View("console"), v.Buffer())
-    Execute(g, g.View("console"))
+    OttoExecute(g, g.View("console"))
     g.DeleteView("dialog-write")
     g.SetCurrentView("main")
     return nil
