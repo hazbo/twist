@@ -43,6 +43,15 @@ func OttoConfigure(g *gocui.Gui) {
         }
     }
 
+    // Load in twist.js
+    js_php_source, err := Asset("src/js/lang/php.js")
+    if (err == nil) {
+        if (len(js_php_source) > 0) {
+            js_source_string := string(js_php_source[:])
+            Otto.Run(js_source_string)
+        }
+    }
+
 }
 
 func OttoExecute(g *gocui.Gui, v *gocui.View) error {

@@ -7,7 +7,7 @@ INSTALL_PATH=/usr/local/bin
 all: twist
 
 bindata: bindatac
-	${BINDATA_BIN} -o src/twist.js.go src/js
+	${BINDATA_BIN} -o src/twist.js.go src/js/...
 
 bindatac: ${BINDATA_SOURCE}
 	cd ${BINDATA_PATH} && go build -o bindata

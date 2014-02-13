@@ -12,11 +12,11 @@
 var editor = {
     print : function(text) {
         print(text);
-    }
+    },
 
     println : function(text) {
         print(text + "\n");
-    }
+    },
 
     write : function(filename) {
     	write(filename);
