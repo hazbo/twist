@@ -14,6 +14,7 @@ package main
 import (
     "fmt"
     "strings"
+    "strconv"
     "../vendor/gocui"
 )
 
@@ -41,6 +42,31 @@ func Quit(g *gocui.Gui, v *gocui.View) error {
 func UseConsole(g *gocui.Gui, v *gocui.View) error {
     if err := g.SetCurrentView("console"); err != nil {
         return err
+    }
+    return nil
+}
+
+func Backspace(g *gocui.Gui, v *gocui.View) error {
+    cx, cy := v.Cursor()
+    spaceCount := 0
+
+    var s []byte
+
+    for i := 0; i < 5; i++ {
+        rune, err := g.Rune(cx + (6 - i), cy)
+        if (err == nil) {
+            res := strconv.AppendQuoteRune(s, rune)
+            if (string(res) == "' '") {
+                spaceCount++
+            }
+        }
+
+        if (spaceCount == 4) {
+            for c := 1; c < 4; c++ {
+                v.DeleteRune(cx - c , cy)
+                v.SetCursor(cx - c, cy)
+            }
+        }
     }
     return nil
 }
