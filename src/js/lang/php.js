@@ -10,12 +10,13 @@
  */
 
 var php = {
-	phpNamespace : "",
-	phpClassName : "",
+	namespace : "",
+	class 	  : "",
 
 	newClass : function(namespace, className) {
-		this.phpClassName = className;
-		this.phpNamespace = namespace;
+		this.class 	   = className;
+		this.namespace = namespace;
+
 		return "<?php\n\nnamespace " + namespace + ";\n\nclass " + className + "\n{\n\n}";
 	},
 
