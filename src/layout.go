@@ -50,7 +50,7 @@ func Layout(g *gocui.Gui) error {
             }
         }
     } else {
-        if v, err := g.SetView("main", 5, -1, maxX, maxY); err != nil {
+        if v, err := g.SetView("main", 5, -1, maxX, maxY -2); err != nil {
             if err != gocui.ErrorUnkView {
                 return err
             }
