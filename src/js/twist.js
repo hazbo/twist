@@ -19,7 +19,7 @@ var editor = {
     },
 
     write : function(filename) {
-    	write(filename);
+        write(filename);     
     }
 }
 
