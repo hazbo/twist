@@ -4,7 +4,7 @@
  * (c) Harry Lawrence
  *
  * License: MIT
- * 
+ *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
@@ -30,11 +30,11 @@ func Keybindings(g *gocui.Gui) error {
         return err
     }
 
-    if err := g.SetKeybinding("", gocui.KeyBackspace, 0, Backspace); err != nil {
+    if err := g.SetKeybinding("main", gocui.KeyBackspace, 0, Backspace); err != nil {
         return err
     }
 
-    if err := g.SetKeybinding("", gocui.KeyBackspace2, 0, Backspace); err != nil {
+    if err := g.SetKeybinding("main", gocui.KeyBackspace2, 0, Backspace); err != nil {
         return err
     }
 
