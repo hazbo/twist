@@ -18,7 +18,14 @@ I decided I'd have a shot at making a simple terminal editor after watching
 Gary Bernhardt. It doesn't actually implement a lot of what he is talking about
 in it at all, but was inspirational.
 
+Only ever tested on OS X but it should build on most platforms.
+
 ### Install
+
+You will need:
+
+  - Git
+  - Go (tested on 1.1.2)
 
 GoEdit depends on [gocui](https://github.com/jroimartin/gocui) which in turn depends on
 [termbox-go](https://github.com/nsf/termbox-go). These are actually forks stored locally
