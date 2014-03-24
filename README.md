@@ -28,6 +28,7 @@ You will need:
 
   - Git
   - Go (tested on 1.1.2)
+  - Make (tested on version 3.81)
 
 To build from source and get everything going all you need are the commands below. These will
 sort out the dependencies for you.
