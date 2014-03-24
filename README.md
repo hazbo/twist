@@ -42,7 +42,7 @@ sort out the dependencies for you.
 	$ make
 	$ build/twist
 
-![v0.0.1](https://raw.github.com/hazbo/twist/master/screenshots/v0.1/3.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjEvMy5wbmciLCJleHBpcmVzIjoxMzkyMTI3OTEzfQ%3D%3D--624c90f8058903d2e94fb7cf9697457120cd23f5)
+![v0.0.1](https://raw.githubusercontent.com/hazbo/twist/master/screenshots/v0.0.1/5.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjAuMS81LnBuZyIsImV4cGlyZXMiOjEzOTYyOTc1MjB9--89069d7ef3a2b6d539ae23d1f2a6723d60b548e3)
 
 ### PHP Support
 
