@@ -27,6 +27,17 @@ You will need:
   - Git
   - Go (tested on 1.1.2)
 
+To build from source and get everything going all you need are the commands below. These will
+sort out the dependencies for you.
+
+  $ git clone https://github.com/hazbo/twist.git
+  $ cd twist
+  $ git submodule init
+  $ git submodule update
+  $ tools/configure
+  $ make
+  $ build/twist
+
 GoEdit depends on [gocui](https://github.com/jroimartin/gocui) which in turn depends on
 [termbox-go](https://github.com/nsf/termbox-go). These are actually forks stored locally
 in the `vendor` directory so they are easier to maintain and customise; hence the `submodule init`.
@@ -37,17 +48,6 @@ The forked versions along with other forked dependencies can be found here:
   - [termbox-go](https://github.com/hazbo/termbox-go)
   - [otto](https://github.com/hazbo/otto.git)
   - [go-bindata](https://github.com/hazbo/go-bindata)
-
-To build from source and get everything going all you need are the commands below. These will
-sort out the dependencies for you.
-
-	$ git clone https://github.com/hazbo/twist.git
-	$ cd twist
-	$ git submodule init
-	$ git submodule update
-	$ tools/configure
-	$ make
-	$ build/twist
 
 ![v0.0.1](https://raw.githubusercontent.com/hazbo/twist/master/screenshots/v0.0.1/5.png?token=315774__eyJzY29wZSI6IlJhd0Jsb2I6aGF6Ym8vdHdpc3QvbWFzdGVyL3NjcmVlbnNob3RzL3YwLjAuMS81LnBuZyIsImV4cGlyZXMiOjEzOTYyOTc1MjB9--89069d7ef3a2b6d539ae23d1f2a6723d60b548e3)
 
