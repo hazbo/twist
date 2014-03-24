@@ -109,11 +109,11 @@ e.print(php.class);
 
 ### Basic Usage
 
-New file: `Ctrl+N`
-Quit: `Ctrl+C`
-Editor mode: `Ctrl+K`
-JS mode: `Ctrl+J`
-Save (write) a file: `Ctrl+W` or `e.write('filename.txt');` in the console
+  - New file: `Ctrl+N`
+  - Quit: `Ctrl+C`
+  - Editor mode: `Ctrl+K`
+  - JS mode: `Ctrl+J`
+  - Save (write) a file: `Ctrl+W` or `e.write('filename.txt');` in the console
 
 ### Development Notes
 
