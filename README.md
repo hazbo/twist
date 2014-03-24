@@ -5,8 +5,8 @@ Twist is a terminal text editor written in [Go](http://golang.org/). I am fairly
 and so far this project has been a nice learning curve. There may be some things that suck
 about it; so if you feel you can contribute to improve any aspect of it, please do.
 
-One of the things I wanted to add to this editor is a nice Javascript API that will
-allow you to perform various tasks that should help you save time.
+One of the things I wanted to add to this editor is a Javascript API that will
+allow you to perform various tasks that could / should help you save time.
 
 ### Install
 
@@ -19,6 +19,7 @@ The forked versions along with other dependencies can be found here:
   - [gocui](https://github.com/hazbo/gocui)
   - [termbox-go](https://github.com/hazbo/termbox-go)
   - [otto](https://github.com/hazbo/otto.git)
+  - [go-bindata](https://github.com/hazbo/go-bindata)
 
 To build from source and get everything going all you need are the commands below. These will
 sort out the dependencies for you.
