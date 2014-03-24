@@ -51,7 +51,7 @@ that would maybe be relevant to some of the PHP work I do. As of now, in terms o
 support, it does next to nothing. I'm not the biggest fan of text editors / IDEs genenrating
 loads of code for you behind the scenes or always trying to guess what you're going to do next
 and then getting it wrong. But I did want a little bit of code genenration in here not only that
-but for the editor to be away of this code and to know what has happened so it can become more useful
+but for the editor to be aware of this code and to know what has happened so it can become more useful
 as you keep using it.
 
 An example:
@@ -106,6 +106,14 @@ is to simply just print it out:
 ```javascript
 e.print(php.class);
 ```
+
+### Basic Usage
+
+New file: `Ctrl+N`
+Quit: `Ctrl+C`
+Editor mode: `Ctrl+K`
+JS mode: `Ctrl+J`
+Save (write) a file: `Ctrl+W` or `e.write('filename.txt');` in the console
 
 ### Development Notes
 
