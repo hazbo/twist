@@ -109,11 +109,23 @@ e.print(php.class);
 
 ### Basic Usage
 
+#### Commands
+
   - New file: `Ctrl+N`
   - Quit: `Ctrl+C`
   - Editor mode: `Ctrl+K`
   - JS mode: `Ctrl+J`
   - Save (write) a file: `Ctrl+W` or `e.write('filename.txt');` in the console
+
+#### Javascript tricks
+
+`e` is always just an alias for `editor`. Either will work:
+
+  -  `e.print("Print some text to the buffer");`
+  -  `e.println("Print a new line to the buffer");`
+  -  `e.write("Newfile.txt");`
+  -  `e.print(php.newClass("ClassNameSpace", "ClassName"));`
+  -  `e.print(php.newFunction("FunctionName"));`
 
 ### Development Notes
 
