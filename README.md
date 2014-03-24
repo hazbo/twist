@@ -30,13 +30,13 @@ You will need:
 To build from source and get everything going all you need are the commands below. These will
 sort out the dependencies for you.
 
-  $ git clone https://github.com/hazbo/twist.git
-  $ cd twist
-  $ git submodule init
-  $ git submodule update
-  $ tools/configure
-  $ make
-  $ build/twist
+    $ git clone https://github.com/hazbo/twist.git
+    $ cd twist
+    $ git submodule init
+    $ git submodule update
+    $ tools/configure
+    $ make
+    $ build/twist
 
 GoEdit depends on [gocui](https://github.com/jroimartin/gocui) which in turn depends on
 [termbox-go](https://github.com/nsf/termbox-go). These are actually forks stored locally
