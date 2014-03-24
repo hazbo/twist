@@ -150,6 +150,7 @@ repos will already be in our forked versions, but these tools can assist with th
   - [Roi Martin](https://github.com/jroimartin) for [gocui](https://github.com/jroimartin/gocui)
   - [nsf](https://github.com/nsf) for [termbox-go](https://github.com/nsf/termbox-go)
   - [Robert Krimen](https://github.com/robertkrimen) for [otto](https://github.com/robertkrimen/otto)
+  - [jimt](https://github.com/jteeuwen) for [go-bindata](https://github.com/jteeuwen/go-bindata)
 
 ### Contributing
 
